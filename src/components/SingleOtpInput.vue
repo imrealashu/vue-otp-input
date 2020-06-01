@@ -1,6 +1,8 @@
 <template>
   <div style="display: flex; align-items: center;">
     <input
+      style="background-color: rgb(247, 247, 247); padding: 10px 25px; border: 1px solid rgb(235, 235, 235); border-radius: 5px; font-size: 16px;"
+      placeholder="*"
       :class="inputClasses"
       :type="isInputNum ? 'number' : 'tel'"
       min="0"
@@ -108,3 +110,10 @@ export default {
   },
 };
 </script>
+<style>
+::placeholder {
+    color: 1px solid rgb(247, 247, 247);
+    font-size: 12px;
+    text-align: center;
+  }
+</style>

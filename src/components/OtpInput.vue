@@ -1,5 +1,5 @@
 <template>
-  <div style="display: flex">
+  <div style="display: flex; justify-content: space-between; width: 100%">
     <SingleOtpInput
       v-for="(item, i) in numInputs"
       :key="i"
